@@ -7,7 +7,7 @@
 * Abstract
 A fines de realizar un 'Netflix Argentino' Se propone extender el desarrollo
 hecho para
-*[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* [fn:github.com/popcorn-time/][fn:github.com/popcorn-team]
+*[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* [fn::https://github.com/popcorn-time/][fn::https://github.com/popcorn-team]
 
 *nota:* Si bien la aplicación Open Source no es de ninguna manera ilegal, su
 uso puede estar en violaciones de derechos de author en ciertas
@@ -60,7 +60,7 @@ calidad y tiene la ventaja de escalar naturalmente cuando crece la base de
 usuarios.
 
 Actualmente, *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* usa las bases de datos y API públicas de [[https://yts.re/home][YIFY
-Torrents]][fn:https://yts.re/api] y [[http://trakt.tv/][Trakt.tv]][fn:http://trakt.tv/api-docs] para
+Torrents]][fn::https://yts.re/api] y [[http://trakt.tv/][Trakt.tv]][fn::http://trakt.tv/api-docs] para
 encontrar el material a disposición.
 
 Algunas modificaciones son necesarias para que *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* responda a los
@@ -70,11 +70,11 @@ continuación se argumenta la factibilidad de esas adaptaciones.
 ** Streaming Adaptativo
 La implementación de streaming adaptativo sobre redes de pares (P2P) no es
 un tema nuevo, y varios papers fueron publicados sobre el tema. La fundación
-[[http://www.p2p-next.org/][P2P-Next]][fn:http://www.p2p-next.org/] fundada por la Unión Europea trabaja
+[[http://www.p2p-next.org/][P2P-Next]][fn::http://www.p2p-next.org/] fundada por la Unión Europea trabaja
 sobre el tema desde 2005.
 
 Por otro lado, la industria esta normalizando a
-[[https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming#MPEG-DASH][DASH]][fn:https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming#MPEG-DASH]
+[[https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming#MPEG-DASH][DASH]][fn::https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming#MPEG-DASH]
 como norma de streaming adaptativo. La ventaja de DASH es de cortar el
 material en pequeños paquetes representando una unidad de tiempo a la
 presentación (i.e. 10s de material por paquete), lo que permite simplificar
@@ -84,12 +84,12 @@ en medios audiovisuales.
 Para convencernos de la factibilidad de adaptar el protocolo bittorrent a
 las necedidas de streaming adaptativo destacamos 2 publicaciones tecnicas:
 1. [[http://www.research.att.com/export/sites/att_labs/techdocs/TD_101236.pdf][Joint-Family: Enabling Adaptive Bitrate Streaming in Peer-to-Peer
-   Video-on-Demand]][fn:http://www.research.att.com/export/sites/att_labs/techdocs/TD_101236.pdf]
-   publicado por AT&T[fn:https://www.research.att.com] detalla
+   Video-on-Demand]][fn::http://www.research.att.com/export/sites/att_labs/techdocs/TD_101236.pdf]
+   publicado por AT&T[fn::https://www.research.att.com] detalla
    optimizaciones de algoritmos de selección de pares que rinden posibles el
    cambio de calidad sin interrupción
 2.[[http://pdf.communicationx.net/p/providing-incentives-in-p2p-adaptive-streaming-w9738.html][Providing Incentives in P2P Adaptive
-  Streaming]][fn:http://pdf.communicationx.net/p/providing-incentives-in-p2p-adaptive-streaming-w9738.html]
+  Streaming]][fn::http://pdf.communicationx.net/p/providing-incentives-in-p2p-adaptive-streaming-w9738.html]
   explica como adaptar DASH a redes P2P
 
 ** Multiples Idiomas
