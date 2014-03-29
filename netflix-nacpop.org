@@ -169,7 +169,9 @@ ventajosa frente a sus competidores.
 
 ** Persistencia de datos de usuarios
 Los portales de usuario no son cosa nueva, el estado ya tiene varios, se
-propone conectar *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* a la plataforma [[http://connectate.gob.ar][Connectate]].
+propone conectar *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* a la plataforma [[http://connectate.gob.ar][Connectate]]
+[fn::http://connectate.gob.ar] desarrollada por Educ.ar para que los
+usuarios puedan bajarse contenidos producidos para el [[https://encuentro.gov.ar][Canal Encuentro]] [fn::https://encuentro.gov.ar].
 
 Por otro lado, para mejor integración y mas capacidades de API, se puede
 pensar en integrarse a [[https://www.mozilla.org/en-US/persona/][Mozilla Personas]].
