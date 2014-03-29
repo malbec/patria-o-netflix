@@ -197,7 +197,6 @@ Smart-TV a integrar tecnologias web y particularmente el motor de
 renderizado Webkit que usa *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]*. Esto nos permite asumir que
 portar la applicación a televisores inteligentes es posible y relativamente fácil.
 
-
 * Ventajas
 ** Control de la plataforma
 ** Capacidad a portar a varios dispositivos (STB TDA)
