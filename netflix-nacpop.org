@@ -2,7 +2,7 @@
 #+LANGUAGE: es
 #+Latex_class: koma-report
 #+AUTHOR: Niv Sardi <niv.sardi@unq.edu.ar>
-#+TITLE: Una propuesta para un Netflix Nacional y Popular
+#+TITLE: Una propuesta para un Netflix Nacional y Popular\includegraphics[width=0.9\textwidth]{./patria-o-netflix.png}~\\[1cm]
 #+Latex_header: \usepackage{titling}
 
 \begin{titlepage}
@@ -10,7 +10,7 @@
 
 \textsc{\huge \bfseries \thetitle}\\[0.5cm]
 
-\includegraphics[width=0.9\textwidth]{./patria-o-netflix.png}~\\[1cm]
+
 
 \emph{Author:}\\
 \theauthor
