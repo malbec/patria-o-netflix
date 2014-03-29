@@ -21,6 +21,7 @@
 #+LaTeX_HEADER:
 #+LaTeX_HEADER:\end{center}
 #+LaTeX_HEADER:\end{titlepage}
+
 A fines de realizar un 'Netflix Argentino' Se propone extender el desarrollo
 hecho para
 *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* [fn:https://github.com/popcorn-time/][fn:https://github.com/popcorn-team]
