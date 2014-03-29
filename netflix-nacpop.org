@@ -133,18 +133,22 @@ extensiones al estandard. Una parte central de su preocupación fue
 garantizar la continuidad de los DRMs, 2 de estas extenciones estan
 dirigidas directamente al tema.
 
-1. la [[http://www.w3.org/TR/WebCryptoAPI/][Web Crypto API]] [fn::http://www.w3.org/TR/WebCryptoAPI/] es una extención al estandard =HTML5= para que los
-   navegadores expongan funciones de cryptografía avanzada. Netflix esta tan
-   interesado por esta extención que ya [[http://techblog.netflix.com/2013/07/nfwebcrypto-web-cryptography-api-native.html][publicó código opensource]] [fn::http://techblog.netflix.com/2013/07/nfwebcrypto-web-cryptography-api-native.html]
-   implementado esta feature como una extensión al navegador chrome de Google
+1. la [[http://www.w3.org/TR/WebCryptoAPI/][Web Crypto API]] [fn::http://www.w3.org/TR/WebCryptoAPI/] es una
+   extención al estandard =HTML5= para que los navegadores expongan
+   funciones de cryptografía avanzada. Netflix esta tan interesado por esta
+   extención que ya [[http://techblog.netflix.com/2013/07/nfwebcrypto-web-cryptography-api-native.html][publicó código opensource]]
+   [fn::http://techblog.netflix.com/2013/07/nfwebcrypto-web-cryptography-api-native.html]
+   implementado esta feature como una extensión al navegador chrome de
+   Google
 
    Esta extensión permite garantizar que las claves de usuarios y contenidos
    no puedan ser inspectadas por código malicioso corriendo en la maquina
    del usuario.
 
-2. el draft [[https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html][Encrypted Media Extensions]] [fn::https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html](EME) permite enchufar DRMs (i.e. programas
-   privativos cerrados) tradicionales al navegador para decifrar el
-   contenido.
+2. el draft [[https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html][Encrypted Media Extensions]]
+   [fn::https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html](EME)
+   permite enchufar DRMs (i.e. programas privativos cerrados) tradicionales
+   al navegador para decifrar el contenido.
 
 Hoy implementada en Windows 8 y Chrome OS, esta solución fue aceptada
 tecnicamente por los broadcasters.
