@@ -2,6 +2,7 @@
 #+LANGUAGE: es
 #+Latex_class: koma-report
 #+AUTHOR: Niv Sardi <niv.sardi@unq.edu.ar>
+#+TITLE: Una propuesta para un Netflix Nacional y Popular
 #+Latex_header: \usepackage{titling}
 
 \begin{titlepage}
