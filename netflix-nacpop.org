@@ -3,6 +3,43 @@
 #+Latex_class: koma-report
 #+AUTHOR: Niv Sardi <niv.sardi@unq.edu.ar>
 
+\begin{titlepage}
+\begin{center}
+
+\includegraphics[width=0.15\textwidth]{./patria-o-netflix.png}~\\[1cm]
+
+\textsc{\LARGE University of Beer}\\[1.5cm]
+
+\textsc{\Large Final year project}\\[0.5cm]
+
+% Title
+\HRule \\[0.4cm]
+{ \huge \bfseries Lager brewing techniques \\[0.4cm] }
+
+\HRule \\[1.5cm]
+
+% Author and supervisor
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+John \textsc{Smith}
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Supervisor:} \\
+Dr.~Mark \textsc{Brown}
+\end{flushright}
+\end{minipage}
+
+\vfill
+
+% Bottom of the page
+{\large \today}
+
+\end{center}
+\end{titlepage}
+
 A fines de realizar un 'Netflix Argentino' Se propone extender el desarrollo
 hecho para
 *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* [fn:https://github.com/popcorn-time/][fn:https://github.com/popcorn-team]
