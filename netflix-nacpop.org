@@ -190,7 +190,8 @@ Es más, se [[http://www.developer.com/ws/android/development-tools/taming-andro
 ]][fn::http://www.developer.com/ws/android/development-tools/taming-android-with-html5.html]
 usar =HTML5= para escribir applicaciones portables.
 
-
+Finalmente, proyectos como [[http://fmtvp.github.io/tal/][Television Application
+Layer]][fn::http://fmtvp.github.io/tal/] de la [[https://bbc.co.uk][BBC]][fn::http://fmtvp.github.io/tal/]
 
 
 * Ventajas
