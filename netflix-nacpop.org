@@ -1,3 +1,8 @@
+#+LaTeX_HEADER: \usepackage[spanish]{babel}
+#+LANGUAGE: es
+#+Latex_class: koma-report
+#+AUTHOR: Niv Sardi <niv.sardi@unq.edu.ar>
+
 A fines de realizar un 'Netflix Argentino' Se propone extender el desarrollo
 hecho para
 *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* [fn:https://github.com/popcorn-time/][fn:https://github.com/popcorn-team]
