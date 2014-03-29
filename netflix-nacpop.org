@@ -142,7 +142,7 @@ dirigidas directamente al tema.
    no puedan ser inspectadas por código malicioso corriendo en la maquina
    del usuario.
 
-2. el draft [[https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html][Encrypted Media Extensions]] (EME) permite enchufar DRMs (i.e. programas
+2. el draft [[https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html][Encrypted Media Extensions]] [fn::https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html](EME) permite enchufar DRMs (i.e. programas
    privativos cerrados) tradicionales al navegador para decifrar el
    contenido.
 
