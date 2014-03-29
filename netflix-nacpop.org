@@ -258,7 +258,7 @@ El uso de tecnologia web como plataforma base garantiza poder capitalizar el
 esfuerzo que estan haciendo todos estos vendors para traer HTML5 a sus
 plataformas.
 
-
 ** Reuso de componentes opensource publicados por José Netflix himself
+Netflix es una empreza hija del internet. Fue posible 
 ** Apoyo y reconocimiento a una innovación argentina
 ** Tecnologias Web
