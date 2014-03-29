@@ -1,4 +1,4 @@
-#+LaTeX_HEADER: \usepackage[spanish]{babel}
+#+LaTeX_xHEADER: \usepackage[spanish]{babel}
 #+LANGUAGE: es
 #+Latex_class: koma-report
 #+AUTHOR: Niv Sardi <niv.sardi@unq.edu.ar>
@@ -49,7 +49,7 @@ para mejorar las sugerencias.
 ** Multiples dispositivos
 la plataforma debe ser portable a varios dispositivos y sistemas operativas,
 como minima debe poder desplegarse sobre Linux, MacOSX, Microsoft Windows,
-=Android= y iOS.
+=Android= y =iOS=.
 
 ** Excelencia tecnica
 Puede parecer superficial, pero es importante estar seguros que se puede
@@ -182,7 +182,7 @@ codigo de pagina y un navegador en un mismo paquete.
 El uso de esta tecnología habilita a reusar desarrollo en varias
 plataformas, naturalmente es fácil servir el mismo aplicativo en la web y
 dejar al usuario usar su navegador casero para acceder al servicio, pero
-también todas las plataformas móviles modernas (=Android=, iOS) permiten
+también todas las plataformas móviles modernas (=Android=, =iOS=) permiten
 escribir applicaciones en =HTML5=.
 
 Es más, se [[http://www.developer.com/ws/android/development-tools/taming-android-with-html5.html][recomienda
