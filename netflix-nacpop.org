@@ -55,6 +55,7 @@ Android y iOS.
 Puede parecer superficial, pero es importante estar seguros que se puede
 llegar a la misma calidad de producto final que Netflix para que este
 proyecto sea relevante (i.e. usado).
+
 * Propuesta tecnica
 El proyecto *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* usa bittorent como storage de material
 audiovisual y permite la visualización de peliculas compartiendo entre todos
@@ -172,7 +173,18 @@ las dos opciones brindan una API que permite implementar la persistencia.
 hay varios sistemas opensource de recomendaciones, algunos de ellos se
 pueden ver en el [[https://en.wikipedia.org/wiki/Netflix_prize][Netflix Prize]].
 
-** Multiples dispositivos.
+** Multiples dispositivos
+La implementación actual de *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* se basa sobre la tecnologia
+HTML5, usando herramientas de la web para hacer una applicación de
+escritorio. Realmente, *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* es un servidor web, con un
+codigo de pagina y un navegador en un mismo paquete.
+
+El uso de esta tecnología habilita a reusar desarrollo en varias
+plataformas, naturalmente es fácil servir el mismo aplicativo en la web y
+dejar al usuario usar su navegador casero para acceder al servicio, pero
+también todas las plataformas modernas permiten escribir applicaciones en
+HTML5. E
+
 * Ventajas
 ** Control de la plataforma
 ** Capacidad a portar a varios dispositivos (STB TDA)
