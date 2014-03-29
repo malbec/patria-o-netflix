@@ -1,0 +1,169 @@
+A fines de realizar un 'Netflix Argentino' Se propone extender el desarrollo
+hecho para
+*[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* [fn:https://github.com/popcorn-time/][fn:https://github.com/popcorn-team]
+
+*nota:* Si bien la aplicación Open Source no es de ninguna manera ilegal, su
+uso puede estar en violaciones de derechos de author en ciertas
+juridiciónes.
+
+
+* Requerimientos
+** Streaming Adaptativo
+la calidad del video se adapta a la conexión del usuario. Cuando las
+condiciones de redes se degradan el software lo detecta y sigue sin
+interrumpir la reproducción usando una fuente de menor requerimiento de
+ancho de banda y/o procesamiento.
+
+** Multiples Idiomas
+el usuario puede elegir visionar el material en varios idiomas. El cambio
+debe ser casi-instantaneo y quedar sincronizado.
+
+** Subtitulos
+el usuario puede elegir visionar el material subtitulado en varios idiomas.
+El cambio debe ser casi-instantaneo y quedar sincronizado.
+
+** Protección Digital de Derechos (DRMs)
+ciertos contenidos deben circular cifrados y ser desencryptados de manera
+segura en la memoria del lector previamente a su visualización. El esquema
+de DRMs elegido debe satisfacer los requerimientos de los broadcasters
+internacionales.
+
+** Persistencia de datos de usuarios
+el usuario tiene una clave que lo identifica al sistema lo que le permite
+volver al mismo estado a dentro de la plataforma independientemente del
+dispositivo que use para conectarse.
+
+** Sugerencias
+al consultar la ficha de un material el sistema sugiere al usuario
+materiales conexos aprendiendo a medida de su uso los gustos del usuario
+para mejorar las sugerencias.
+
+** Multiples dispositivos
+la plataforma debe ser portable a varios dispositivos y sistemas operativas,
+como minima debe poder desplegarse sobre Linux, MacOSX, Microsoft Windows,
+Android y iOS.
+
+* Propuesta tecnica
+El proyecto *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* usa bittorent como storage de material
+audiovisual y permite la visualización de peliculas compartiendo entre todos
+los visualizadores la carga de ancho de banda. Esta solución permite reducir
+dramáticamente la infraestructura necesaria a una plataforma de streaming de
+calidad y tiene la ventaja de escalar naturalmente cuando crece la base de
+usuarios.
+
+Actualmente, *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* usa las bases de datos y API públicas de [[https://yts.re/home][YIFY
+Torrents]][fn:https://yts.re/api] y [[http://trakt.tv/][Trakt.tv]][fn:http://trakt.tv/api-docs] para
+encontrar el material a disposición.
+
+Algunas modificaciones son necesarias para que *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* responda a los
+requerimientos descritos en la primera parte de este documento, a
+continuación se argumenta la factibilidad de esas adaptaciones.
+
+** Streaming Adaptativo
+La implementación de streaming adaptativo sobre redes de pares (P2P) no es
+un tema nuevo, y varios papers fueron publicados sobre el tema. La fundación
+[[http://www.p2p-next.org/][P2P-Next]][fn:http://www.p2p-next.org/] fundada por la Unión Europea trabaja
+sobre el tema desde 2005.
+
+Por otro lado, la industria esta normalizando a
+[[https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming#MPEG-DASH][DASH]][fn:https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming#MPEG-DASH]
+como norma de streaming adaptativo. La ventaja de DASH es de cortar el
+material en pequeños paquetes representando una unidad de tiempo a la
+presentación (i.e. 10s de material por paquete), lo que permite simplificar
+la sincronización como el cacheo en una red de distribución no especializada
+en medios audiovisuales.
+
+Para convencernos de la factibilidad de adaptar el protocolo bittorrent a
+las necedidas de streaming adaptativo destacamos 2 publicaciones tecnicas:
+1. [[http://www.research.att.com/export/sites/att_labs/techdocs/TD_101236.pdf][Joint-Family: Enabling Adaptive Bitrate Streaming in Peer-to-Peer
+   Video-on-Demand]][fn:http://www.research.att.com/export/sites/att_labs/techdocs/TD_101236.pdf]
+   publicado por AT&T[fn:https://www.research.att.com] detalla
+   optimizaciones de algoritmos de selección de pares que rinden posibles el
+   cambio de calidad sin interrupción
+2.[[http://pdf.communicationx.net/p/providing-incentives-in-p2p-adaptive-streaming-w9738.html][Providing Incentives in P2P Adaptive
+  Streaming]][fn:http://pdf.communicationx.net/p/providing-incentives-in-p2p-adaptive-streaming-w9738.html]
+  explica como adaptar DASH a redes P2P
+
+** Multiples Idiomas
+El problema de servir multiples flujos de audio es en realidad muy
+equivalente al problema de Streaming Adaptativo. Usando DASH, se puede
+considerar cada audio como una calidad distinta, saltando de uno a otro como
+se haria en caso de discontinuidad de condiciones de redes.
+
+** Subtitulos
+Actualmente *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* soporta la incrustación de subtitulos. Una
+pequeña optimización para hacer la carga de estos asyncronica es necesaria
+para cumplir con el requerimiento de instantaneadad, pero ese desarrollo no
+presenta ningún desafío tecnico.
+
+** Protección Digital de Derechos (DRMs)
+El problema de garantizar Protección Digital de Derechos es mas político que
+técnico. Desde la técnica, la protección no tiene mucho sentido ya que
+cuando se presenta el contenido a la pantalla de un usuario corriendo
+soberanamente su sistema de explotación es imposible impedirle grabar el
+audio y video que se esta reproduciendo sin violar fundamentalmente su
+privacidad (y varias leyes). 
+
+Por otro lado, el arte de la criptografia es de hacer que el descubrimiento
+de datos privados sea bastante difícil (i.e. requiera esfuerzo) para que el
+interesado (i.e. atacante) renuncie a la empresa de romper el código criptográfico.
+
+Independientemente, presentamos a continuación 2 caminos tecnológicos
+garantizando un nivel de criptografia suficiente (a nuestra medida).
+
+En Abril de 2013, Netflix [[http://techblog.netflix.com/2013/04/html5-video-at-netflix.html][anunciaba]] mover su tecnología de streaming de
+[[http://support.microsoft.com/gp/lifean45#sl5][Microsoft Silverlight]] a Tecnologías de la Web (HTML5). Para adaptar HTML5 a
+sus necesidades, Netflix propone 3 nuevas extensiones al estandard. Una
+parte central de su preocupación fue garantizar la continuidad de los DRMs,
+2 de estas extenciones estan dirigidas directamente al tema.
+
+1. la [[http://www.w3.org/TR/WebCryptoAPI/][Web Crypto API]] es una extención al estandard HTML5 para que los
+   navegadores expongan funciones de cryptografía avanzada. Netflix esta tan
+   interesado por esta extención que ya [[http://techblog.netflix.com/2013/07/nfwebcrypto-web-cryptography-api-native.html][publicó código opensource]]
+   implementado esta feature como una extensión al navegador chrome de Google
+
+   Esta extensión permite garantizar que las claves de usuarios y contenidos
+   no puedan ser inspectadas por código malicioso corriendo en la maquina
+   del usuario.
+
+2. el draft [[https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html][Encrypted Media Extensions]] (EME) permite enchufar DRMs (i.e. programas
+   privativos cerrados) tradicionales al navegador para decifrar el
+   contenido.
+
+Hoy implementada en Windows 8 y Chrome OS, esta solución fue aceptada
+tecnicamente por los broadcasters.
+
+*nota*: usar Encrypted Media Extensions es una perdida de control y
+soberania ya que requiere el uso de software privativo inauditable.
+Recomendamos en contra de su uso. Se puede implementar un sistema
+criptografico completo usando solamente la Web Crypto API.
+
+*nota*: por otro lado Encrypted Media Encrypted en realidad solo permite
+cargar un binario (software privativo) que se ocupa de la decrypción del
+material. Si bien Netflix esta haciendo lobby sobre los actores tecnologicos
+para que integren EME en sus plataformas, parece lógico que no distribuyan
+la tecnología que pactan con los productores de contenido. resumiendo:
+usando EME es poco probable que Netflix colabore en distribuir su metodo de
+DRM, ya que es parte de sus 'secretos industriales' garantizando su posición
+ventajosa frente a sus competidores.
+
+** Persistencia de datos de usuarios
+Los portales de usuario no son cosa nueva, el estado ya tiene varios, se
+propone conectar *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* a la plataforma [[http://connectate.gob.ar][Connectate]].
+
+Por otro lado, para mejor integración y mas capacidades de API, se puede
+pensar en integrarse a [[https://www.mozilla.org/en-US/persona/][Mozilla Personas]].
+
+las dos opciones brindan una API que permite implementar la persistencia.
+
+** Sugerencias
+hay varios sistemas opensource de recomendaciones, algunos de ellos se
+pueden ver en el [[https://en.wikipedia.org/wiki/Netflix_prize][Netflix Prize]].
+
+** Multiples dispositivos.
+* Ventajas
+** Control de la plataforma
+** Capacidad a portar a varios dispositivos (STB TDA)
+** Reuso de componentes opensource publicados por José Netflix himself
+** Apoyo y reconocimiento a una innovación argentina
+** Tecnologias Web
