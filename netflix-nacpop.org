@@ -3,24 +3,8 @@
 #+Latex_class: koma-report
 #+AUTHOR: Niv Sardi <niv.sardi@unq.edu.ar>
 #+TITLE: Una propuesta para un Netflix Nacional y Popular
-#+Latex_header: \usepackage{titling}
-#+LaTeX_HEADER:\begin{titlepage}
-#+LaTeX_HEADER:\begin{center}
-#+LaTeX_HEADER:
-#+LaTeX_HEADER:\textsc{\huge \bfseries \thetitle}\\[0.5cm]
-#+LaTeX_HEADER:
-#+LaTeX_HEADER:\includegraphics[width=0.9\textwidth]{./patria-o-netflix.png}~\\[1cm]
-#+LaTeX_HEADER:
-#+LaTeX_HEADER:\emph{Author:}\\
-#+LaTeX_HEADER:\theauthor
-#+LaTeX_HEADER:
-#+LaTeX_HEADER:\vfill
-#+LaTeX_HEADER:
-#+LaTeX_HEADER:% Bottom of the page
-#+LaTeX_HEADER:{\large \today}
-#+LaTeX_HEADER:
-#+LaTeX_HEADER:\end{center}
-#+LaTeX_HEADER:\end{titlepage}
+
+[[file:patria-o-netflix.png]]
 
 A fines de realizar un 'Netflix Argentino' Se propone extender el desarrollo
 hecho para
