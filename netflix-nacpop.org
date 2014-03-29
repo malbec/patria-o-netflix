@@ -259,6 +259,45 @@ esfuerzo que estan haciendo todos estos vendors para traer HTML5 a sus
 plataformas.
 
 ** Reuso de componentes opensource publicados por José Netflix himself
-Netflix es una empreza hija del internet. Fue posible 
+Netflix es una empreza hija del internet. Fue posible gracias a su uso
+masivo de [[http://techblog.netflix.com/2012/07/open-source-at-netflix-by-ruslan.html][tecnologías libres y estandares abiertos]]
+[fn::http://techblog.netflix.com/2012/07/open-source-at-netflix-by-ruslan.html].
+Concientes de esta realidad, los ingenieros de Netflix contribuyen a la
+comunidad Open Source.
+
+Citando directamente de la fuente anterior:
+
+  +  We have benefited from many other people contributing to open source,
+     so we are paying back in kind. 
+
+  +  Netflix was an early cloud adopter, moving all of our streaming
+     services to run on top of AWS infrastructure.  We paid the pioneer tax
+     – by encountering and working through many issues, corner cases and
+     limitations.  We’ve captured the patterns that work  in our platform
+     components and automation tools. We benefit from the scale effects of
+     other AWS users adopting similar patterns, and will continue working
+     with the community to develop the ecosystem.
+
+  + External community contributions - by opening up we enable the larger
+    developer community to: review, comment,  add test cases, bug fixes,
+    ports and functional contributions to our components, benefiting
+    everyone.
+
+  + Improved code and documentation quality – we’ve observed that the peer
+    pressure from “Social Coding” has driven engineers to make sure code is
+    clean and well structured, documentation is useful and up to date.  What
+    we’ve learned is that a component may be “Good enough for running in
+    production, but not good enough for Github”.
+
+  + Durability – we think any code will fare better over time if it’s
+    actively developed by an open community and used widely vs. maintained
+    by small number of engineers for a single workload.
+
 ** Apoyo y reconocimiento a una innovación argentina
+Si bien La implementación actual de *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* es una mezcolanza de
+tecnologias que no tienen patria, la conyuntura de esas se hizo por un grupo
+de talentosos desarrolladores Argentinos.
+
+
+
 ** Tecnologias Web
