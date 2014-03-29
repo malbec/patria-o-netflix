@@ -236,6 +236,7 @@ del mundo Open Source.
 Finalmente, el camino de la construcción de soberanía por el control y el
 entendimiento local de la tecnología permite desde hoy de [[http://netflix.github.io/][usar tecnología
 publicada por Netflix]]
+
 ** Capacidad a portar a varios dispositivos (STB TDA)
 ** Reuso de componentes opensource publicados por José Netflix himself
 ** Apoyo y reconocimiento a una innovación argentina
