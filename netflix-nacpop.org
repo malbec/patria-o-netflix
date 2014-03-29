@@ -124,11 +124,14 @@ interesado (i.e. atacante) renuncie a la empresa de romper el código criptográ
 Independientemente, presentamos a continuación 2 caminos tecnológicos
 garantizando un nivel de criptografia suficiente (a nuestra medida).
 
-En Abril de 2013, Netflix [[http://techblog.netflix.com/2013/04/html5-video-at-netflix.html][anunciaba]] [fn::http://techblog.netflix.com/2013/04/html5-video-at-netflix.html] mover su tecnología de streaming de
-[[http://support.microsoft.com/gp/lifean45#sl5][Microsoft Silverlight]] [fn::http://support.microsoft.com/gp/lifean45#sl5]a Tecnologías de la Web (=HTML5=). Para adaptar =HTML5= a
-sus necesidades, Netflix propone 3 nuevas extensiones al estandard. Una
-parte central de su preocupación fue garantizar la continuidad de los DRMs,
-2 de estas extenciones estan dirigidas directamente al tema.
+En Abril de 2013, Netflix [[http://techblog.netflix.com/2013/04/html5-video-at-netflix.html][anunciaba]]
+[fn::http://techblog.netflix.com/2013/04/html5-video-at-netflix.html] mover
+su tecnología de streaming de [[http://support.microsoft.com/gp/lifean45#sl5][Microsoft Silverlight]]
+[fn::http://support.microsoft.com/gp/lifean45#sl5]a Tecnologías de la Web
+(=HTML5=). Para adaptar =HTML5= a sus necesidades, Netflix propone 3 nuevas
+extensiones al estandard. Una parte central de su preocupación fue
+garantizar la continuidad de los DRMs, 2 de estas extenciones estan
+dirigidas directamente al tema.
 
 1. la [[http://www.w3.org/TR/WebCryptoAPI/][Web Crypto API]] es una extención al estandard =HTML5= para que los
    navegadores expongan funciones de cryptografía avanzada. Netflix esta tan
