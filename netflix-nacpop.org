@@ -22,7 +22,7 @@
 \begin{minipage}{0.4\textwidth}
 \begin{flushleft} \large
 \emph{Author:}\\
-John \textsc{Smith}
+\author
 \end{flushleft}
 \end{minipage}
 \begin{minipage}{0.4\textwidth}
