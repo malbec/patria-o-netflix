@@ -201,11 +201,11 @@ Es más, se [[http://www.developer.com/ws/android/development-tools/taming-andro
 usar =HTML5= para escribir applicaciones portables.
 
 Finalmente, proyectos como [[http://fmtvp.github.io/tal/][Television Application
-Layer]][fn::http://fmtvp.github.io/tal/] de la
-[[https://bbc.co.uk][BBC]][fn::https://bbc.co.uk] a los productores de
-Smart-TV a integrar tecnologias web y particularmente el motor de
-renderizado Webkit que usa *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]*. Esto nos permite asumir que
-portar la applicación a televisores inteligentes es posible y relativamente fácil.
+Layer]][fn::http://fmtvp.github.io/tal/] de la [[https://bbc.co.uk][BBC]][fn::https://bbc.co.uk] a
+los productores de Smart-TV a integrar tecnologias web y particularmente el
+motor de renderizado Webkit que usa *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]*. Esto nos permite asumir
+que portar la applicación a televisores inteligentes es posible y
+relativamente fácil.
 
 * Ventajas
 ** Control de la plataforma
