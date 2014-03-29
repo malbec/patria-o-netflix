@@ -133,7 +133,7 @@ extensiones al estandard. Una parte central de su preocupación fue
 garantizar la continuidad de los DRMs, 2 de estas extenciones estan
 dirigidas directamente al tema.
 
-1. la [[http://www.w3.org/TR/WebCryptoAPI/][Web Crypto API]] [fn::http://www.w3.org/TR/WebCryptoAPI/]es una extención al estandard =HTML5= para que los
+1. la [[http://www.w3.org/TR/WebCryptoAPI/][Web Crypto API]] [fn::http://www.w3.org/TR/WebCryptoAPI/] es una extención al estandard =HTML5= para que los
    navegadores expongan funciones de cryptografía avanzada. Netflix esta tan
    interesado por esta extención que ya [[http://techblog.netflix.com/2013/07/nfwebcrypto-web-cryptography-api-native.html][publicó código opensource]] [fn::http://techblog.netflix.com/2013/07/nfwebcrypto-web-cryptography-api-native.html]
    implementado esta feature como una extensión al navegador chrome de Google
