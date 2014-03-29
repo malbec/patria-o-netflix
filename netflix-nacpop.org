@@ -12,11 +12,6 @@
 
 \includegraphics[width=0.9\textwidth]{./patria-o-netflix.png}~\\[1cm]
 
-% Title
-\HRule \\[0.4cm]
-{ \huge \bfseries Lager brewing techniques \\[0.4cm] }
-
-\HRule \\[1.5cm]
 
 % Author and supervisor
 \emph{Author:}\\
