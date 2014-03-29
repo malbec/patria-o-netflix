@@ -12,9 +12,8 @@ hecho para
 uso puede estar en violaciones de derechos de author en ciertas
 juridiciónes.
 
-[[file:patria-o-netflix.png]]
-
 \end{abstract}
+[[file:patria-o-netflix.png]]
 * Requerimientos
 ** Streaming Adaptativo
 la calidad del video se adapta a la conexión del usuario. Cuando las
