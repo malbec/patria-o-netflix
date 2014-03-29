@@ -238,7 +238,27 @@ entendimiento local de la tecnología permite desde hoy de [[http://netflix.gith
 publicada por Netflix]]. Es poco probable que otro provedor pueda llegar sin
 usar estas tecnologias a la misma excelencia tecnica.
 
-** Capacidad a portar a varios dispositivos (STB TDA)
+** Capacidad a portar a varios dispositivos (STB, TDA, Smart TV, Telefonos)
+Los procesadores multimedia como el [[https://en.wikipedia.org/wiki/Texas_Instruments_OMAP][OMAP]]
+[fn::https://en.wikipedia.org/wiki/Texas_Instruments_OMAP] tinen mucho
+enfoque de la industria. Vienen hoy con muchas capacidades 'on-chip' de
+descodificación de video, operaciones criptograficas y calculo
+trigonometrico para cual se [[http://freedesktop.org/wiki/GstOpenMAX/][desarrollan applicaciones especificas]]
+[fn::http://freedesktop.org/wiki/GstOpenMAX/].
+
+El mercado esta lleno de implementaciones privativas para estos nuevos
+dispositivos, pero las interfaces de programación (API) de estos 'vendors
+privativos' divergen de dispositivo a dispositivo, y resultan ser dificiles
+y costos de integrar.
+
+Solo un modelo de desarrollo con Software Libre y Estandares Abiertos
+garantiza poder empujar optimizaciones de un dispositivo al otro.
+
+El uso de tecnologia web como plataforma base garantiza poder capitalizar el
+esfuerzo que estan haciendo todos estos vendors para traer HTML5 a sus
+plataformas.
+
+
 ** Reuso de componentes opensource publicados por José Netflix himself
 ** Apoyo y reconocimiento a una innovación argentina
 ** Tecnologias Web
