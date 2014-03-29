@@ -14,6 +14,7 @@ uso puede estar en violaciones de derechos de author en ciertas
 juridiciónes.
 \vfill
 [[file:patria-o-netflix.png]]
+\vfill
 * Requerimientos
 ** Streaming Adaptativo
 la calidad del video se adapta a la conexión del usuario. Cuando las
