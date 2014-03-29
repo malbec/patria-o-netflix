@@ -12,7 +12,7 @@ hecho para
 *nota:* Si bien la aplicación Open Source no es de ninguna manera ilegal, su
 uso puede estar en violaciones de derechos de author en ciertas
 juridiciónes.
-\vfill 3cm
+\vfill
 [[file:patria-o-netflix.png]]
 * Requerimientos
 ** Streaming Adaptativo
