@@ -8,12 +8,10 @@
 \begin{titlepage}
 \begin{center}
 
-\textsc{\Large \thetitle}\\[0.5cm]
+\textsc{\huge \bfseries \thetitle}\\[0.5cm]
 
 \includegraphics[width=0.9\textwidth]{./patria-o-netflix.png}~\\[1cm]
 
-
-% Author and supervisor
 \emph{Author:}\\
 \theauthor
 
