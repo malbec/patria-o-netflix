@@ -235,7 +235,8 @@ del mundo Open Source.
 
 Finalmente, el camino de la construcción de soberanía por el control y el
 entendimiento local de la tecnología permite desde hoy de [[http://netflix.github.io/][usar tecnología
-publicada por Netflix]]
+publicada por Netflix]]. Es poco probable que otro provedor pueda llegar sin
+usar estas tecnologias a la misma excelencia tecnica.
 
 ** Capacidad a portar a varios dispositivos (STB TDA)
 ** Reuso de componentes opensource publicados por José Netflix himself
