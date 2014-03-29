@@ -10,7 +10,7 @@
 
 \textsc{\LARGE University of Beer}\\[1.5cm]
 
-\textsc{\Large \title}\\[0.5cm]
+\textsc{\Large @title}\\[0.5cm]
 
 % Title
 \HRule \\[0.4cm]
