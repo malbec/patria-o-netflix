@@ -51,6 +51,10 @@ la plataforma debe ser portable a varios dispositivos y sistemas operativas,
 como minima debe poder desplegarse sobre Linux, MacOSX, Microsoft Windows,
 Android y iOS.
 
+** Excelencia tecnica
+Puede parecer superficial, pero es importante estar seguros que se puede
+llegar a la misma calidad de producto final que Netflix para que este
+proyecto sea relevante (i.e. usado).
 * Propuesta tecnica
 El proyecto *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* usa bittorent como storage de material
 audiovisual y permite la visualización de peliculas compartiendo entre todos
