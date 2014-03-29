@@ -2,27 +2,26 @@
 #+LANGUAGE: es
 #+Latex_class: koma-report
 #+AUTHOR: Niv Sardi <niv.sardi@unq.edu.ar>
-#+TITLE: Una propuesta para un Netflix Nacional y Popular\includegraphics[width=0.9\textwidth]{./patria-o-netflix.png}~\\[1cm]
+#+TITLE: Una propuesta para un Netflix Nacional y Popular
 #+Latex_header: \usepackage{titling}
-
-\begin{titlepage}
-\begin{center}
-
-\textsc{\huge \bfseries \thetitle}\\[0.5cm]
-
-
-
-\emph{Author:}\\
-\theauthor
-
-\vfill
-
-% Bottom of the page
-{\large \today}
-
-\end{center}
-\end{titlepage}
-
+#+LaTeX_HEADER:\begin{titlepage}
+#+LaTeX_HEADER:\begin{center}
+#+LaTeX_HEADER:
+#+LaTeX_HEADER:\textsc{\huge \bfseries \thetitle}\\[0.5cm]
+#+LaTeX_HEADER:
+#+LaTeX_HEADER:\includegraphics[width=0.9\textwidth]{./patria-o-netflix.png}~\\[1cm]
+#+LaTeX_HEADER:
+#+LaTeX_HEADER:\emph{Author:}\\
+#+LaTeX_HEADER:\theauthor
+#+LaTeX_HEADER:
+#+LaTeX_HEADER:\vfill
+#+LaTeX_HEADER:
+#+LaTeX_HEADER:% Bottom of the page
+#+LaTeX_HEADER:{\large \today}
+#+LaTeX_HEADER:
+#+LaTeX_HEADER:\end{center}
+#+LaTeX_HEADER:\end{titlepage}
+#+LaTeX_HEADER:
 A fines de realizar un 'Netflix Argentino' Se propone extender el desarrollo
 hecho para
 *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* [fn:https://github.com/popcorn-time/][fn:https://github.com/popcorn-team]
