@@ -8,8 +8,6 @@
 \begin{titlepage}
 \begin{center}
 
-\textsc{\LARGE University of Beer}\\[1.5cm]
-
 \textsc{\Large \thetitle}\\[0.5cm]
 
 \includegraphics[width=0.9\textwidth]{./patria-o-netflix.png}~\\[1cm]
