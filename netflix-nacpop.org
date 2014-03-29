@@ -207,6 +207,9 @@ motor de renderizado Webkit que usa *[[https://github.com/popcorn-team/popcorn-a
 que portar la applicación a televisores inteligentes es posible y
 relativamente fácil.
 
+** Excelencia Tecnica
+
+
 * Ventajas
 ** Control de la plataforma
 ** Capacidad a portar a varios dispositivos (STB TDA)
