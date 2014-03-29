@@ -21,18 +21,8 @@
 \HRule \\[1.5cm]
 
 % Author and supervisor
-\begin{minipage}{0.4\textwidth}
-\begin{flushleft} \large
 \emph{Author:}\\
 \theauthor
-\end{flushleft}
-\end{minipage}
-\begin{minipage}{0.4\textwidth}
-\begin{flushright} \large
-\emph{Supervisor:} \\
-Dr.~Mark \textsc{Brown}
-\end{flushright}
-\end{minipage}
 
 \vfill
 
