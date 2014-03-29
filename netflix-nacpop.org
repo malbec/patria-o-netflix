@@ -12,7 +12,7 @@
 
 \textsc{\Large \thetitle}\\[0.5cm]
 
-\includegraphics[width=0.8\textwidth]{./patria-o-netflix.png}~\\[1cm]
+\includegraphics[width=\textwidth]{./patria-o-netflix.png}~\\[1cm]
 
 % Title
 \HRule \\[0.4cm]
