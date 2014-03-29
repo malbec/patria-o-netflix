@@ -208,7 +208,14 @@ que portar la applicación a televisores inteligentes es posible y
 relativamente fácil.
 
 ** Excelencia Tecnica
+*[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* esta escrita usando estandares de excelencia tecnica de la
+industria como [[http://nodejs.org/][NodeJS]], [[http://learnboost.github.io/stylus/][Stylus]], [[http://backbonejs.org/][Backbone]], [[http://marionettejs.com/][Marionette]] y [[https://github.com/rogerwang/node-webkit][Node Webkit]].
 
+Estas tecnologías son las mismas que se usan para escribir applicaciónes
+comerciales lideres en materia de diseño y estabilidad.
+
+No nos cabe ninguna duda que con el equipo adecuado podemos aspirar al mas
+alto nivel tecnico
 
 * Ventajas
 ** Control de la plataforma
