@@ -182,8 +182,9 @@ codigo de pagina y un navegador en un mismo paquete.
 El uso de esta tecnología habilita a reusar desarrollo en varias
 plataformas, naturalmente es fácil servir el mismo aplicativo en la web y
 dejar al usuario usar su navegador casero para acceder al servicio, pero
-también todas las plataformas móviles modernas (=Android=, =iOS=, =BlackBerry=) permiten
-escribir applicaciones en =HTML5=.
+también todas las plataformas móviles modernas (=Android=, =iOS=,
+=BlackBerry=, =FirefoxOS=, =Windows8 Mobile=,…) permiten escribir
+applicaciones en =HTML5=.
 
 Es más, se [[http://www.developer.com/ws/android/development-tools/taming-android-with-html5.html][recomienda
 ]][fn::http://www.developer.com/ws/android/development-tools/taming-android-with-html5.html]
