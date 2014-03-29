@@ -4,8 +4,6 @@
 #+AUTHOR: Niv Sardi <niv.sardi@unq.edu.ar>
 #+TITLE: Una propuesta para un Netflix Nacional y Popular
 
-[[file:patria-o-netflix.png]]
-
 A fines de realizar un 'Netflix Argentino' Se propone extender el desarrollo
 hecho para
 *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* [fn:https://github.com/popcorn-time/][fn:https://github.com/popcorn-team]
@@ -14,6 +12,7 @@ hecho para
 uso puede estar en violaciones de derechos de author en ciertas
 juridiciónes.
 
+[[file:patria-o-netflix.png]]
 
 * Requerimientos
 ** Streaming Adaptativo
