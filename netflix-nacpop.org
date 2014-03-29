@@ -298,6 +298,16 @@ Si bien La implementación actual de *[[https://github.com/popcorn-team/popcorn-
 tecnologias que no tienen patria, la conyuntura de esas se hizo por un grupo
 de talentosos desarrolladores Argentinos.
 
+Es un importante marcador de calidad que fue detectado por paginas como
+[[http://www.reddit.com/r/PopCornTime/][Reddit]] [fn::http://www.reddit.com/r/PopCornTime/], [[http://techcrunch.com/tag/popcorn-time/][TechCrunch]]
+[fn::http://techcrunch.com/tag/popcorn-time/], [[http://yro-beta.slashdot.org/story/14/03/15/1618223/controversial-torrent-streaming-app-popcorn-time-shuts-down-then-gets-reborn][Slashdot]]
+[fn::http://yro-beta.slashdot.org/story/14/03/15/1618223/controversial-torrent-streaming-app-popcorn-time-shuts-down-then-gets-reborn]
+y muchos mas. Estas paginas internacionales sonaltamente reconocidas en el
+ambito tecnico y posicionan a la Argentina como un actor relevante.
 
+Politicamente parece importante:
++ que el estado reconozca la innovacion nacional y la salude.
++ que los gestores de material multimedial demuestren no tener miedo del
+  internet.
 
 ** Tecnologias Web
