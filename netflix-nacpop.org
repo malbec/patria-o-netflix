@@ -2,6 +2,7 @@
 #+LANGUAGE: es
 #+Latex_class: koma-report
 #+AUTHOR: Niv Sardi <niv.sardi@unq.edu.ar>
+#+Latex_header: \usepackage{titling}
 
 \begin{titlepage}
 \begin{center}
