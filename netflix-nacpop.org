@@ -182,8 +182,10 @@ codigo de pagina y un navegador en un mismo paquete.
 El uso de esta tecnología habilita a reusar desarrollo en varias
 plataformas, naturalmente es fácil servir el mismo aplicativo en la web y
 dejar al usuario usar su navegador casero para acceder al servicio, pero
-también todas las plataformas modernas permiten escribir applicaciones en
-HTML5. E
+también todas las plataformas móviles modernas (Android, iOS) xpermiten
+escribir applicaciones en HTML5.
+
+
 
 * Ventajas
 ** Control de la plataforma
