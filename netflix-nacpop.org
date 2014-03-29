@@ -8,7 +8,7 @@
 \begin{titlepage}
 \begin{center}
 
-\includegraphics[width=0.15\textwidth]{./patria-o-netflix.png}~\\[1cm]
+\includegraphics[width=0.8\textwidth]{./patria-o-netflix.png}~\\[1cm]
 
 \textsc{\LARGE University of Beer}\\[1.5cm]
 
