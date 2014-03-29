@@ -7,7 +7,7 @@
 * Abstract
 A fines de realizar un 'Netflix Argentino' Se propone extender el desarrollo
 hecho para
-*[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* [fn:https://github.com/popcorn-time/][fn:https://github.com/popcorn-team]
+*[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* [fn:github.com/popcorn-time/][fn:github.com/popcorn-team]
 
 *nota:* Si bien la aplicación Open Source no es de ninguna manera ilegal, su
 uso puede estar en violaciones de derechos de author en ciertas
