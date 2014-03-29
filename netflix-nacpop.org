@@ -219,6 +219,23 @@ alto nivel tecnico
 
 * Ventajas
 ** Control de la plataforma
+La convergencia digital, el movimiento a contenidos transmedia
+multipantallas, la topologia cambiante de las pantallas que son hoy
+computadoras, consolas de juego y conectores a las redes sociales
+omnipresentes requiere una plataforma flexible, ágil, y completamente
+dominada para poder seguir siendo relevante en un universo de diversión en
+rapida transformación.
+
+La única manera de garantizar esta flexibiliad y capacidad de respuesta es
+de dominar completamente las tecnologías usadas.
+
+A fines de reducir la cantidad de ingenieros necesarios no vemos otra opción
+que de construir el paquete tecnologico basandonos en la fertil creatividad
+del mundo Open Source.
+
+Finalmente, el camino de la construcción de soberanía por el control y el
+entendimiento local de la tecnología permite desde hoy de [[http://netflix.github.io/][usar tecnología
+publicada por Netflix]]
 ** Capacidad a portar a varios dispositivos (STB TDA)
 ** Reuso de componentes opensource publicados por José Netflix himself
 ** Apoyo y reconocimiento a una innovación argentina
