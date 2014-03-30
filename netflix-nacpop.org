@@ -5,9 +5,27 @@
 #+TITLE: Una propuesta para un Netflix Nacional y Popular
 
 * Abstract
-A fines de realizar un 'Netflix Argentino' Se propone extender el desarrollo
+
+La convergencia digital, el movimiento a contenidos transmedia
+multipantallas, la topología cambiante de las pantallas que son hoy
+computadoras, consolas de juego y conectores a las redes sociales
+omnipresentes requiere una plataforma flexible, ágil, y completamente
+dominada para poder seguir siendo relevante en un universo de diversión en
+rápida transformación.
+
+La única manera de garantizar esta flexibiliad y capacidad de respuesta es
+de dominar completamente las tecnologías usadas.
+
+A fines de reducir la cantidad de ingenieros necesarios no vemos otra opción
+que de construir el paquete tecnológico basandonos en la fertil creatividad
+del mundo Open Source, es en esta linea que para realizar un 'Netflix Argentino' proponemos extender el desarrollo
 hecho para
-*[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* [fn::https://github.com/popcorn-time/][fn::https://github.com/popcorn-team]
+*[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]*
+[fn::https://github.com/popcorn-time/][fn::https://github.com/popcorn-team]
+lo cual nos evita el largo trabajo de partir desde cero y al mismo tiempo
+nos permite dar reconocimiento a la creatividad y al talento de nuestros jóvenes.
+
+
 
 *nota:* Si bien la aplicación Open Source no es de ninguna manera ilegal, su
 uso puede estar en violaciones de derechos de author en ciertas
@@ -15,6 +33,8 @@ juridiciónes.
 \vfill
 [[file:patria-o-netflix.png]]
 \vfill
+
+
 * Requerimientos
 ** Streaming Adaptativo
 La calidad del video se adapta a la conexión del usuario. Cuando las
