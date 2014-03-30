@@ -17,41 +17,41 @@ juridiciónes.
 \vfill
 * Requerimientos
 ** Streaming Adaptativo
-la calidad del video se adapta a la conexión del usuario. Cuando las
+La calidad del video se adapta a la conexión del usuario. Cuando las
 condiciones de redes se degradan el software lo detecta y sigue sin
 interrumpir la reproducción usando una fuente de menor requerimiento de
 ancho de banda y/o procesamiento.
 
 ** Multiples Idiomas
-el usuario puede elegir visionar el material en varios idiomas. El cambio
+El usuario puede elegir ver el material en varios idiomas. El cambio
 debe ser casi-instantaneo y quedar sincronizado.
 
 ** Subtitulos
-el usuario puede elegir visionar el material subtitulado en varios idiomas.
+El usuario puede elegir ver el material subtitulado en varios idiomas.
 El cambio debe ser casi-instantaneo y quedar sincronizado.
 
 ** Protección Digital de Derechos (DRMs)
-ciertos contenidos deben circular cifrados y ser desencryptados de manera
-segura en la memoria del lector previamente a su visualización. El esquema
+Ciertos contenidos deben circular cifrados y ser desencriptados de manera
+segura en la memoria del reproductor previamente a su visualización. El esquema
 de DRMs elegido debe satisfacer los requerimientos de los broadcasters
 internacionales.
 
 ** Persistencia de datos de usuarios
-el usuario tiene una clave que lo identifica al sistema lo que le permite
+El usuario tiene una clave que lo identifica en el sistema, lo que le permite
 volver al mismo estado a dentro de la plataforma independientemente del
 dispositivo que use para conectarse.
 
 ** Sugerencias
-al consultar la ficha de un material el sistema sugiere al usuario
+Al consultar la ficha de un material el sistema sugiere al usuario
 materiales conexos aprendiendo a medida de su uso los gustos del usuario
 para mejorar las sugerencias.
 
 ** Multiples dispositivos
-la plataforma debe ser portable a varios dispositivos y sistemas operativas,
-como minima debe poder desplegarse sobre Linux, MacOSX, Microsoft Windows,
+La plataforma debe ser portable a varios dispositivos y sistemas operativas,
+como mínimo debe poder desplegarse sobre Linux, MacOSX, Microsoft Windows,
 =Android= y =iOS=.
 
-** Excelencia tecnica
+** Excelencia técnica
 Puede parecer superficial, pero es importante estar seguros que se puede
 llegar a la misma calidad de producto final que Netflix para que este
 proyecto sea relevante (i.e. usado).
@@ -68,8 +68,9 @@ Actualmente, *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* usa
 Torrents]][fn::https://yts.re/api] y [[http://trakt.tv/][Trakt.tv]][fn::http://trakt.tv/api-docs] para
 encontrar el material a disposición.
 
-Algunas modificaciones son necesarias para que *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* responda a los
-requerimientos descritos en la primera parte de este documento, a
+Para que *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* responda a los
+requerimientos descritos en la primera parte de este documento es necesario
+realizar algunas modificaciones, a
 continuación se argumenta la factibilidad de esas adaptaciones.
 
 ** Streaming Adaptativo
@@ -80,10 +81,10 @@ sobre el tema desde 2005.
 
 Por otro lado, la industria esta normalizando a
 [[https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming#MPEG-DASH][DASH]][fn::https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming#MPEG-DASH]
-como norma de streaming adaptativo. La ventaja de DASH es de cortar el
-material en pequeños paquetes representando una unidad de tiempo a la
-presentación (i.e. 10s de material por paquete), lo que permite simplificar
-la sincronización como el cacheo en una red de distribución no especializada
+como norma de streaming adaptativo. La ventaja de DASH radica en cortar el
+material en pequeños paquetes, representando una unidad de tiempo a la
+presentación (Ej 10s de material por paquete), lo que permite simplificar
+la sincronización como el cache en una red de distribución no especializada
 en medios audiovisuales.
 
 Para convencernos de la factibilidad de adaptar el protocolo bittorrent a
@@ -101,13 +102,13 @@ las necedidas de streaming adaptativo destacamos 2 publicaciones tecnicas:
 El problema de servir multiples flujos de audio es en realidad muy
 equivalente al problema de Streaming Adaptativo. Usando DASH, se puede
 considerar cada audio como una calidad distinta, saltando de uno a otro como
-se haria en caso de discontinuidad de condiciones de redes.
+se haría en caso de malas condiciones de red.
 
 ** Subtitulos
-Actualmente *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* soporta la incrustación de subtitulos. Una
-pequeña optimización para hacer la carga de estos asyncronica es necesaria
-para cumplir con el requerimiento de instantaneadad, pero ese desarrollo no
-presenta ningún desafío tecnico.
+Actualmente *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* soporta la incrustación de subtitulos. Para
+cumplir con el requerimiento de instantaneidad es necesario realizar una
+pequeña optimización para hacer la carga de estos de manera asincronica. Este desarrollo no
+presenta ningún desafío técnico.
 
 ** Protección Digital de Derechos (DRMs)
 El problema de garantizar Protección Digital de Derechos es mas político que
@@ -118,8 +119,8 @@ audio y video que se esta reproduciendo sin violar fundamentalmente su
 privacidad (y varias leyes). 
 
 Por otro lado, el arte de la criptografia es de hacer que el descubrimiento
-de datos privados sea bastante difícil (i.e. requiera esfuerzo) para que el
-interesado (i.e. atacante) renuncie a la empresa de romper el código criptográfico.
+de datos privados sea bastante difícil (Ej requiera esfuerzo) para que el
+interesado (Ej atacante) renuncie a la tarea de romper el código criptográfico.
 
 Independientemente, presentamos a continuación 2 caminos tecnológicos
 garantizando un nivel de criptografia suficiente (a nuestra medida).
@@ -138,29 +139,29 @@ dirigidas directamente al tema.
    funciones de cryptografía avanzada. Netflix esta tan interesado por esta
    extención que ya [[http://techblog.netflix.com/2013/07/nfwebcrypto-web-cryptography-api-native.html][publicó código opensource]]
    [fn::http://techblog.netflix.com/2013/07/nfwebcrypto-web-cryptography-api-native.html]
-   implementado esta feature como una extensión al navegador chrome de
+   implementando esta característica como una extensión al navegador chrome de
    Google
 
    Esta extensión permite garantizar que las claves de usuarios y contenidos
-   no puedan ser inspectadas por código malicioso corriendo en la maquina
+   no puedan ser inspeccionadas por código malicioso corriendo en la maquina
    del usuario.
 
-2. el draft [[https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html][Encrypted Media Extensions]]
+2. el draft [[https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html][Encrypted Media Extensions]] (EME)
    [fn::https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html](EME)
-   permite enchufar DRMs (i.e. programas privativos cerrados) tradicionales
-   al navegador para decifrar el contenido.
+   permite enchufar DRMs (Ej programas privativos cerrados) tradicionales
+   al navegador para descifrar el contenido.
 
 Hoy implementada en Windows 8 y Chrome OS, esta solución fue aceptada
-tecnicamente por los broadcasters.
+técnicamente por los broadcasters.
 
 *nota*: usar Encrypted Media Extensions es una perdida de control y
-soberania ya que requiere el uso de software privativo inauditable.
+soberanía,ya que requiere el uso de software privativo no auditable.
 Recomendamos en contra de su uso. Se puede implementar un sistema
 criptografico completo usando solamente la Web Crypto API.
 
 *nota*: por otro lado Encrypted Media Encrypted en realidad solo permite
-cargar un binario (software privativo) que se ocupa de la decrypción del
-material. Si bien Netflix esta haciendo lobby sobre los actores tecnologicos
+cargar un binario (software privativo) que se ocupa de la desencriptación del
+material. Si bien Netflix esta haciendo lobby sobre los actores tecnológicos
 para que integren EME en sus plataformas, parece lógico que no distribuyan
 la tecnología que pactan con los productores de contenido. resumiendo:
 usando EME es poco probable que Netflix colabore en distribuir su metodo de
@@ -201,21 +202,22 @@ Es más, se [[http://www.developer.com/ws/android/development-tools/taming-andro
 usar =HTML5= para escribir applicaciones portables.
 
 Finalmente, proyectos como [[http://fmtvp.github.io/tal/][Television Application
-Layer]][fn::http://fmtvp.github.io/tal/] de la [[https://bbc.co.uk][BBC]][fn::https://bbc.co.uk] a
-los productores de Smart-TV a integrar tecnologias web y particularmente el
+Layer]][fn::http://fmtvp.github.io/tal/] de la [[https://bbc.co.uk][BBC]][fn::https://bbc.co.uk]
+invitan a
+los productores de Smart-TV a integrar tecnologías web y particularmente el
 motor de renderizado Webkit que usa *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]*. Esto nos permite asumir
-que portar la applicación a televisores inteligentes es posible y
+que portar la aplicación a televisores inteligentes es posible y
 relativamente fácil.
 
-** Excelencia Tecnica
-*[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* esta escrita usando estandares de excelencia tecnica de la
+** Excelencia Técnica
+*[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* esta escrita usando estandares de excelencia técnica de la
 industria como [[http://nodejs.org/][NodeJS]], [[http://learnboost.github.io/stylus/][Stylus]], [[http://backbonejs.org/][Backbone]], [[http://marionettejs.com/][Marionette]] y [[https://github.com/rogerwang/node-webkit][Node Webkit]].
 
 Estas tecnologías son las mismas que se usan para escribir applicaciónes
 comerciales lideres en materia de diseño y estabilidad.
 
 No nos cabe ninguna duda que con el equipo adecuado podemos aspirar al mas
-alto nivel tecnico
+alto nivel técnico
 
 * Ventajas
 ** Control de la plataforma
@@ -224,24 +226,24 @@ multipantallas, la topologia cambiante de las pantallas que son hoy
 computadoras, consolas de juego y conectores a las redes sociales
 omnipresentes requiere una plataforma flexible, ágil, y completamente
 dominada para poder seguir siendo relevante en un universo de diversión en
-rapida transformación.
+rápida transformación.
 
 La única manera de garantizar esta flexibiliad y capacidad de respuesta es
 de dominar completamente las tecnologías usadas.
 
 A fines de reducir la cantidad de ingenieros necesarios no vemos otra opción
-que de construir el paquete tecnologico basandonos en la fertil creatividad
+que de construir el paquete tecnológico basandonos en la fertil creatividad
 del mundo Open Source.
 
 Finalmente, el camino de la construcción de soberanía por el control y el
 entendimiento local de la tecnología permite desde hoy de [[http://netflix.github.io/][usar tecnología
 publicada por Netflix]]. Es poco probable que otro provedor pueda llegar sin
-usar estas tecnologias a la misma excelencia tecnica.
+usar estas tecnologías a la misma excelencia técnica.
 
 ** Capacidad a portar a varios dispositivos (STB, TDA, Smart TV, Telefonos)
 Los procesadores multimedia como el [[https://en.wikipedia.org/wiki/Texas_Instruments_OMAP][OMAP]]
 [fn::https://en.wikipedia.org/wiki/Texas_Instruments_OMAP] tinen mucho
-enfoque de la industria. Vienen hoy con muchas capacidades 'on-chip' de
+enfoque de la industria y cuentan  con muchas capacidades 'on-chip' de
 descodificación de video, operaciones criptograficas y calculo
 trigonometrico para cual se [[http://freedesktop.org/wiki/GstOpenMAX/][desarrollan applicaciones especificas]]
 [fn::http://freedesktop.org/wiki/GstOpenMAX/].
@@ -249,20 +251,20 @@ trigonometrico para cual se [[http://freedesktop.org/wiki/GstOpenMAX/][desarroll
 El mercado esta lleno de implementaciones privativas para estos nuevos
 dispositivos, pero las interfaces de programación (API) de estos 'vendors
 privativos' divergen de dispositivo a dispositivo, y resultan ser dificiles
-y costos de integrar.
+y costosos de integrar.
 
-Solo un modelo de desarrollo con Software Libre y Estandares Abiertos
+Solo un modelo de desarrollo con Software Libre y Estándares Abiertos
 garantiza poder empujar optimizaciones de un dispositivo al otro.
 
-El uso de tecnologia web como plataforma base garantiza poder capitalizar el
+El uso de tecnología web como plataforma base garantiza poder capitalizar el
 esfuerzo que estan haciendo todos estos vendors para traer HTML5 a sus
 plataformas.
 
 ** Reuso de componentes opensource publicados por José Netflix himself
-Netflix es una empreza hija del internet. Fue posible gracias a su uso
-masivo de [[http://techblog.netflix.com/2012/07/open-source-at-netflix-by-ruslan.html][tecnologías libres y estandares abiertos]]
+Netflix es una empresa hija de internet. Fue posible gracias a su uso
+masivo de [[http://techblog.netflix.com/2012/07/open-source-at-netflix-by-ruslan.html][tecnologías libres y estándares abiertos]]
 [fn::http://techblog.netflix.com/2012/07/open-source-at-netflix-by-ruslan.html].
-Concientes de esta realidad, los ingenieros de Netflix contribuyen a la
+Conscientes de esta realidad, los ingenieros de Netflix contribuyen a la
 comunidad Open Source.
 
 Citando directamente de la fuente anterior:
@@ -294,23 +296,23 @@ Citando directamente de la fuente anterior:
     by small number of engineers for a single workload.
 
 ** Apoyo y reconocimiento a una innovación argentina
-Si bien La implementación actual de *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* es una mezcolanza de
-tecnologias que no tienen patria, la conyuntura de esas se hizo por un grupo
+Si bien La implementación actual de *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* es una mezcla de
+tecnologías que no tienen patria, la cocción de esas tecnologías fue realizada por un grupo
 de talentosos desarrolladores Argentinos.
 
-Es un importante marcador de calidad que fue detectado por paginas como
+Este avance es un importante marcador de calidad que fue detectado por paginas como
 [[http://www.reddit.com/r/PopCornTime/][Reddit]] [fn::http://www.reddit.com/r/PopCornTime/], [[http://techcrunch.com/tag/popcorn-time/][TechCrunch]]
 [fn::http://techcrunch.com/tag/popcorn-time/], [[http://yro-beta.slashdot.org/story/14/03/15/1618223/controversial-torrent-streaming-app-popcorn-time-shuts-down-then-gets-reborn][Slashdot]]
 [fn::http://yro-beta.slashdot.org/story/14/03/15/1618223/controversial-torrent-streaming-app-popcorn-time-shuts-down-then-gets-reborn]
-y muchos mas. Estas paginas internacionales sonaltamente reconocidas en el
-ambito tecnico y posicionan a la Argentina como un actor relevante.
+y muchos mas. Estas paginas internacionales son altamente reconocidas en el
+ambito técnico y posicionan a la Argentina como un actor relevante.
 
-Politicamente parece importante:
-+ que el estado reconozca la innovacion nacional y la salude.
-+ que el estado entienda que las revoluciones tecnologicas no se pueden
+Políticamente parece importante:
++ que el estado reconozca la innovación nacional y la salude.
++ que el estado entienda que las revoluciones tecnológicas no se pueden
   combatir, se tienen que acompañar.
 + que el estado pueda retener talento nacional.
-+ que los gestores de material multimedial demuestren no tener miedo del
++ que los gestores de material multimedial demuestren no tener miedo de
   internet.
 
-** Tecnologias Web
+** Tecnologías Web
