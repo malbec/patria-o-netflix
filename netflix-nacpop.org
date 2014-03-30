@@ -307,11 +307,14 @@ Este avance es un importante marcador de calidad que fue detectado por paginas c
 y muchos mas. Estas paginas internacionales son altamente reconocidas en el
 ambito técnico y posicionan a la Argentina como un actor relevante.
 
-Políticamente parece importante:
-+ que el estado reconozca la innovación nacional y la salude.
-+ que el estado entienda que las revoluciones tecnológicas no se pueden
-  combatir, se tienen que acompañar.
-+ que el estado pueda retener talento nacional.
+Políticamente nos parece importante:
++ Que el estado reconozca la innovación nacional y la salude.
++ Que al reconocer, y sumar a este desarrollo al equipo que dio origen a *popcorn-time* se esta en la
+  linea del programa nacional de repatriar científicos formados en nuestro
+  país evitando estos jóvenes emigren.
++ que el Estado entienda el valor estrategico de acompañar y potenciar las revoluciones tecnológicas.
++ que el estado pueda retener talento nacional y eventualmente vender
+  transferencia tecnológica a la región.
 + que los gestores de material multimedial demuestren no tener miedo de
   internet.
 
