@@ -23,8 +23,14 @@ hecho para
 *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]*
 [fn::https://github.com/popcorn-time/][fn::https://github.com/popcorn-team]
 lo cual nos evita el largo trabajo de partir desde cero y al mismo tiempo
-nos permite dar reconocimiento a la creatividad y al talento de nuestros jóvenes.
+nos permite dar reconocimiento a la creatividad y al talento de nuestros
+jóvenes al mismo tiempo que evitamos la fuga de cerebros.
 
+
+Esta propuesta tecnológica contempla el manejo de DRM para cumplir con los
+requerimientos de los broadcasters internacionales, garantizando que los
+contenidos que deban circular cifrados lo hagan y la operación de
+desencriptación sea transparente para el usuario.
 
 
 *nota:* Si bien la aplicación Open Source no es de ninguna manera ilegal, su
