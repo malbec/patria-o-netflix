@@ -180,7 +180,7 @@ dirigidas directamente al tema.
 Hoy implementada en Windows 8 y Chrome OS, esta solución fue aceptada
 técnicamente por los broadcasters.
 
-*nota*: usar Encrypted Media Extensions es una perdida de control y
+*nota*: usar [[https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html][Encrypted Media Extensions]] es una perdida de control y
 soberanía,ya que requiere el uso de software privativo no auditable.
 Recomendamos en contra de su uso. Se puede implementar un sistema
 criptografico completo usando solamente la Web Crypto API.
