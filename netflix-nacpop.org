@@ -91,7 +91,7 @@ calidad y tiene la ventaja de escalar naturalmente cuando crece la base de
 usuarios.
 
 Actualmente, *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* usa las bases de datos y API públicas de [[https://yts.re/home][YIFY
-Torrents]][fn::https://yts.re/api] y [[http://trakt.tv/][Trakt.tv]][fn::http://trakt.tv/api-docs] para
+Torrents]][fn:ytsapi:https://yts.re/api] y [[http://trakt.tv/][Trakt.tv]][fn:traktapi:http://trakt.tv/api-docs] para
 encontrar el material a disposición.
 
 Para que *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* responda a los
@@ -106,7 +106,7 @@ un tema nuevo, y varios papers fueron publicados sobre el tema. La fundación
 sobre el tema desde 2005.
 
 Por otro lado, la industria esta normalizando a
-[[https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming#MPEG-DASH][DASH]][fn::https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming#MPEG-DASH]
+[[https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming#MPEG-DASH][DASH]][fn:dash:https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming#MPEG-DASH]]
 como norma de streaming adaptativo. La ventaja de DASH radica en cortar el
 material en pequeños paquetes, representando una unidad de tiempo a la
 presentación (/i.e./ 10s de material por paquete), lo que permite simplificar
@@ -122,11 +122,11 @@ las necedidas de streaming adaptativo destacamos 2 publicaciones tecnicas:
    cambio de calidad sin interrupción
 2.[[http://pdf.communicationx.net/p/providing-incentives-in-p2p-adaptive-streaming-w9738.html][Providing Incentives in P2P Adaptive
   Streaming]][fn::http://pdf.communicationx.net/p/providing-incentives-in-p2p-adaptive-streaming-w9738.html]
-  explica como adaptar DASH a redes P2P
+  explica como adaptar [[https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming#MPEG-DASH][DASH]][fn:dash:https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming#MPEG-DASH] a redes P2P
 
 ** Multiples Idiomas
 El problema de servir multiples flujos de audio es en realidad muy
-equivalente al problema de Streaming Adaptativo. Usando DASH, se puede
+equivalente al problema de Streaming Adaptativo. Usando [[https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming#MPEG-DASH][DASH]][fn:dash:https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming#MPEG-DASH], se puede
 considerar cada audio como una calidad distinta, saltando de uno a otro como
 se haría en caso de malas condiciones de red.
 
