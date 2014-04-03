@@ -181,18 +181,31 @@ Hoy implementada en Windows 8 y Chrome OS, esta solución fue aceptada
 técnicamente por los broadcasters.
 
 *nota*: usar [[https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html][Encrypted Media Extensions]] es una perdida de control y
-soberanía,ya que requiere el uso de software privativo no auditable.
-Recomendamos en contra de su uso. Se puede implementar un sistema
-criptografico completo usando solamente la [[http://www.w3.org/TR/WebCryptoAPI/][Web Crypto API]] .
+        soberanía,ya que requiere el uso de software privativo no auditable.
+        Recomendamos en contra de su uso. Se puede implementar un sistema
+        criptografico completo usando solamente la [[http://www.w3.org/TR/WebCryptoAPI/][Web Crypto API]] .
 
-*nota*: por otro lado [[https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html][Encrypted Media Extensions]] en realidad solo permite
-cargar un binario (software privativo) que se ocupa de la desencriptación del
-material. Si bien Netflix esta haciendo lobby sobre los actores tecnológicos
-para que integren EME en sus plataformas, parece lógico que no distribuyan
-la tecnología que pactan con los productores de contenido. resumiendo:
-usando EME es poco probable que Netflix colabore en distribuir su metodo de
-DRM, ya que es parte de sus 'secretos industriales' garantizando su posición
-ventajosa frente a sus competidores.
+*nota*: detrás de un vocabulario complejo, [[https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html][Encrypted Media Extensions]] en
+	    realidad solo describe como cargar un binario (software
+	    privativo) que se ocupa de la desencriptación del material con
+	    puntos de acceso distintos a la interfaz estandarizada de
+	    extención de navegadores
+	    (NPAPI[fn::https://wiki.mozilla.org/NPAPI]).
+
+        si bien Netflix esta haciendo lobby sobre los actores tecnológicos
+        para que integren EME en sus plataformas[fn::ya lo lograron con
+        Windows 8 y Chrome OS], parece lógico que no
+        distribuyan[fn::effectivamente no lo estan haciendo] la tecnología
+        que pactan con los productores de contenido.
+
+        resumiendo: usando EME es poco probable que Netflix colabore en
+        distribuir su metodo de DRM, ya que es parte de sus 'secretos
+        industriales' garantizando su posición ventajosa frente a sus
+        competidores, por ende, el camino EME no asegura que los provedores
+        de contenido acepten la solución criptográfica propuesta.
+
+        politicamente, este punto es el mas sensible y debe ser llevado con
+        muchisimo cuidado y diplomacia.
 
 ** Persistencia de datos de usuarios
 Los portales de usuario no son cosa nueva, el estado ya tiene varios, se
