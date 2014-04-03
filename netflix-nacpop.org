@@ -183,7 +183,7 @@ técnicamente por los broadcasters.
 *nota*: usar [[https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html][Encrypted Media Extensions]] es una perdida de control y
 soberanía,ya que requiere el uso de software privativo no auditable.
 Recomendamos en contra de su uso. Se puede implementar un sistema
-criptografico completo usando solamente la Web Crypto API.
+criptografico completo usando solamente la [[http://www.w3.org/TR/WebCryptoAPI/][Web Crypto API]] .
 
 *nota*: por otro lado [[https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html][Encrypted Media Extensions]] en realidad solo permite
 cargar un binario (software privativo) que se ocupa de la desencriptación del
