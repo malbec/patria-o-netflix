@@ -204,8 +204,9 @@ técnicamente por los broadcasters.
         competidores, por ende, el camino EME no asegura que los provedores
         de contenido acepten la solución criptográfica propuesta.
 
-        politicamente, este punto es el mas sensible y debe ser llevado con
-        muchisimo cuidado y diplomacia.
+        si bien tecnicamente no es de ninguna dificultad, politicamente,
+        este punto es de lo mas sensible y debe ser llevado con muchisimo
+        cuidado y diplomacia.
 
 ** Persistencia de datos de usuarios
 Los portales de usuario no son cosa nueva, el estado ya tiene varios, se
