@@ -21,7 +21,7 @@ que de construir el paquete tecnológico basandonos en la fertil creatividad
 del mundo Open Source, es en esta linea que para realizar un 'Netflix Argentino' proponemos extender el desarrollo
 hecho para
 *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]*
-[fn::https://github.com/popcorn-time/][fn::https://github.com/popcorn-team]
+[fn:poptime:https://github.com/popcorn-time/][fn:popteam:https://github.com/popcorn-team]
 lo cual nos evita el largo trabajo de partir desde cero y al mismo tiempo
 nos permite dar reconocimiento a la creatividad y al talento de nuestros
 jóvenes al mismo tiempo que evitamos la fuga de cerebros.
