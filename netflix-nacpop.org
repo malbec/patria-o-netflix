@@ -224,6 +224,14 @@ las dos opciones brindan una API que permite implementar la persistencia.
 hay varios sistemas opensource de recomendaciones, algunos de ellos se
 pueden ver en el [[https://en.wikipedia.org/wiki/Netflix_prize][Netflix Prize]].
 
+Este elemento puede parecer anodino, pero a nivel de experiencia de usuario
+es absolutamente central ya que es lo que hace o deshace la sensación de
+aplicación 'inteligente'. Un sistema bien implementado es invisible, uno mal
+hecho es insoportable.
+
+Por suerte, la investigación en el campo 'Big Data' es una extensa fuente de
+buenas practicas para esta tare.
+
 ** Multiples dispositivos
 La implementación actual de *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* se basa sobre la tecnologia
 =HTML5=, usando herramientas de la web para hacer una applicación de
