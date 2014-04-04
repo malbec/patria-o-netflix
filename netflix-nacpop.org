@@ -230,7 +230,7 @@ aplicación 'inteligente'. Un sistema bien implementado es invisible, uno mal
 hecho es insoportable.
 
 Por suerte, la investigación en el campo 'Big Data' es una extensa fuente de
-buenas practicas para esta tare.
+buenas practicas para esta tarea.
 
 ** Multiples dispositivos
 La implementación actual de *[[https://github.com/popcorn-team/popcorn-app][popcorn-time]]* se basa sobre la tecnologia
